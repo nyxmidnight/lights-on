@@ -1,4 +1,7 @@
 *.log
+*.config
+*.psd
+*.min.css
 wp-config.php
 wp-content/advanced-cache.php
 wp-content/backup-db/
@@ -13,6 +16,7 @@ wp-content/plugins/hello.php
 /.htaccess
 /license.txt
 /readme.html
+/readme.txt
 /sitemap.xml
 /sitemap.xml.gz
-
+LICENSE

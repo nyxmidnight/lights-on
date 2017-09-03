@@ -1,0 +1,18 @@
+/* TEAM */
+Theme Designer: Nyx
+Site: http://nyx.zone/
+Twitter: nyxmidnight
+Tumblr: thenyxmidnight
+AO3: nyxmidnight                
+Location: Québec, Canada
+							
+/* THANKS */
+Jeff Starr: https://perishablepress.com/
+Chris Coyer: https://css-tricks.com/
+rachelandrew: https://codepen.io/rachelandrew/pen/ZKaXGM/
+
+/* SITE */
+Last update: 2017/09/03
+Standards: HTML5, CSS3, PHP5                        
+Components: WordPress, Shoelace CSS, Normalize                       
+Software: InstantWP, Brackets, PrePros, FileZilla
