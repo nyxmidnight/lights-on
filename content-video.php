@@ -28,7 +28,7 @@ if($u_modified_time != $u_time) {
                 </p>
                 <?php endif; ?>
         </header>
-        <?php if (is_single() || is_page() || is_home()) : ?>
+        <?php if (is_single() || is_page()) : ?>
             <div class="entry-content">
                 <?php the_content(); ?>
                     <?php wp_link_pages(); ?>
@@ -36,6 +36,21 @@ if($u_modified_time != $u_time) {
             <?php else : ?>
                 <div class="entry-summary">
                     <?php the_excerpt(); ?>
+                    <p><a href="<?php the_permalink(); ?>" class="read-more">Watch this!</a></p>
                 </div>
                 <?php endif; ?>
+                <footer class="entry-footer">
+                        <p class="entry-meta">Filed under:
+                            <?php the_category(','); ?>
+                                <?php if (has_tag()) : ?>|
+                                    <?php the_tags('Tagged: ', ', ', ''); ?>
+                                        <?php endif; ?>
+                        </p>
+                        <p class="entry-meta entry-comment-number">
+                            <?php if (!post_password_required() && (comments_open() || get_comments_number())) : ?>
+                                <?php comments_popup_link(); ?>
+                        </p>
+                        <?php endif; ?>
+                        <hr class="post-divider">
+                    </footer>
 </article>

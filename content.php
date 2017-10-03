@@ -14,7 +14,7 @@ if($u_modified_time != $u_time) {
 	the_modified_time('Y-m-d');
 	echo ". ";
 } ?> |
-                            <?php echo get_the_term_list( $post->ID, 'byfandom', 'Fandoms: ', ', ' ); ?> |
+                            <?php echo get_the_term_list( $post->ID, 'byfandom', 'Fandoms: ', ', ' ); ?> | <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a> |
                                 <?php edit_post_link(); ?>
                 </p>
                 <?php endif; ?>
@@ -72,5 +72,6 @@ if($u_modified_time != $u_time) {
                                 <?php comments_popup_link(); ?>
                         </p>
                         <?php endif; ?>
+                        <hr class="post-divider">
                     </footer>
 </article>

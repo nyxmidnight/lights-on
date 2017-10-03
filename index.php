@@ -34,7 +34,7 @@ the_post_thumbnail();
 		<?php endif; ?>
 
 		<footer class="entry-footer">
-            <p class="entry-meta">Filed under: <?php the_category(','); ?> <?php if (has_tag()) : ?>| <?php the_tags('Tagged: ', ',', ''); ?>
+            <p class="entry-meta">Filed under: <?php the_category(','); ?> <?php if (has_tag()) : ?>| <?php the_tags('Tagged: ', ', ', ''); ?>
 <?php endif; ?></p>
     <hr class="post-divider"></footer>
 
