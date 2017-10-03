@@ -7,11 +7,11 @@
 <?php global $paged;
 if ($paged > 1) : ?>
 <nav class="nav nav-post clearfix" role="navigation">
-<div class="float-left"><?php previous_post_link(); ?></div> <div class="float-right"><?php next_post_link(); ?></div>
+<div class="float-left"><?php previous_posts_link(); ?></div> <div class="float-right"><?php next_posts_link(); ?></div>
 </nav>
 <?php else : ?>
 <nav class="nav nav-post clearfix" role="navigation">
-<div class="float-right"><?php next_post_link(); ?></div>
+<div class="float-right"><?php next_posts_link(); ?></div>
 </nav>
 <?php endif; ?>
 <?php endif; ?>
