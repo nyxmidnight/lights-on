@@ -94,6 +94,14 @@ function check_referrer() {
 }
 add_action('check_comment_flood', 'check_referrer');
 
+//Reduce Comment Spam by Flagging Author URL with >50 characters
+// CSS Tricks
+function rkv_url_spamcheck( $approved , $commentdata ) {
+    return ( strlen( $commentdata['comment_author_url'] ) > 50 ) ? 'spam' : $approved;
+  }
+
+add_filter( 'pre_comment_approved', 'rkv_url_spamcheck', 99, 2 );
+
 // comment invite feed link
 function rss_comment_footer($content) {
 	if (is_feed()) {
