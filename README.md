@@ -16,6 +16,6 @@ Lights On! is not ready for sharing and use by other WordPress blogs, as some of
 
 None of this theme would have been possible without [Jeff Starr](https://perishablepress.com/)'s excellent book, [WordPress Themes In Depth](https://wp-tao.com/). In fact, I know much of my current WordPress coding knowledge to the writings of Jeff Starr and [Chris Coyer](https://css-tricks.com/). Many thanks!
 
-The theme also relies on the library [Shoelace](https://shoelace.style/).
+The theme also relies on the CSS library [Shoelace](https://shoelace.style/).
 
 :beginner:
