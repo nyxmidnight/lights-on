@@ -13,7 +13,7 @@ the_post_thumbnail();
 } ?>
         <header class="entry-header">
             <h3 class="entry-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-            <p class="entry-meta"><?php echo date("l, F d, Y"); ?> | <?php echo get_the_term_list( $post->ID, 'byfandom', 'Fandoms: ', ', ' ); ?> | <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a> | <?php edit_post_link(); ?></p></header>
+            <p class="entry-meta"><?php the_time('l, F jS, Y'); ?> | <?php echo get_the_term_list( $post->ID, 'byfandom', 'Fandoms: ', ', ' ); ?> | <a href="<?php comments_link(); ?>"><?php comments_number(); ?></a> | <?php edit_post_link(); ?></p></header>
 
 		<?php if ($count == 1) : ?>
 
