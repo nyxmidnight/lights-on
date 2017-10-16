@@ -1,6 +1,7 @@
 *.log
 *.config
 *.psd
+*.json
 *.min.css
 wp-config.php
 wp-content/advanced-cache.php
@@ -20,3 +21,8 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 LICENSE
+
+node_modules/
+dist/
+style.old.css
+css/style.css
